@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+:root {
+	--purple-color: rgb(54, 12, 170);
+}
+
+* {
+    margin: 0;      
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 76, 177);
+}
+
+.card {
+    height: 400px;
+    width: 300px; 
+    text-align: center;
+    margin: 0 30px;  
+    border-radius: 15px;
+    background-color: rgb(17, 23, 37);
+    color: white;
+    overflow: hidden;
+}
+
+
+.card h2 {
+    margin-top: 40px;
+}
+
+.card p {
+    margin-top: 6px;
+    color: var(--purple-color);
+}
+
+.card-social {
+    margin-top: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-social a {
+    color: white;
+}
+
+.card-social .fab {
+    font-size: 24px;
+}
+
+.card-social .fab:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.card button {
+    margin-top: 28px;
+    padding: 10px 18px;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border-radius: inherit;
+    border: 4px solid var(--purple-color);
+}
+
+.card button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    transform: translateY(25px);
+    border-radius: 50%;
+    border: 4px solid var(--purple-color);
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-img:hover {
+    width: 100%;
+    height: 100%;
+    border: unset;
+    border-radius: unset;
+    transform: unset;
+}
